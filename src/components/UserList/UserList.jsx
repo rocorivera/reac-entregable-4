@@ -13,8 +13,6 @@ const UserList = ({ onDelete, users, onEdit }) => {
       ))}
     </ul>
   );
-
-  //   return null;
 };
 
 export default UserList;

@@ -23,9 +23,6 @@ function App() {
     const newState = !isUserFormVisible;
     return setIsUserFormVisible(newState);
   };
-  // const handleCloseModal =()=>{
-  //   setIsUserFormVisible(false)
-  // }
 
   const handleOnSend = async (data) => {
     if (data.id) await editUserData(data.id, data);
