@@ -1,0 +1,87 @@
+.user-card__main-container {
+    /* position: relative; */
+    width: 381px;
+    height: 274px;
+
+    border: black 1px solid;
+    border-radius: 6px;
+
+    /* padding: 12px; */
+    margin: 12px;
+
+
+}
+
+.user-card__title-container {
+    /* display: flex;s */
+    /* position: relative; */
+    width: 100%;
+    height: 34px;
+}
+
+.user-card__title {
+    display: grid;
+    place-content: center;
+
+    /* width: 339px; */
+
+    margin: 24px 6px 10px;
+    /*  */
+}
+
+.user-card__ul {
+    /* position: relative; */
+    color: rgb(48, 48, 48);
+}
+
+.user-card__li {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0;
+
+    list-style: none;
+}
+
+.user-card__btn-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-card__put-btn {
+    width: 43px;
+    height: 43px;
+
+    font-size: 28px;
+
+    border: 0 transparent none;
+    border-radius: 10px;
+
+    margin: 0 7px;
+    padding: 0 2px 3px 0;
+}
+
+.user-card__delete-btn {
+    width: 43px;
+    height: 43px;
+
+    font-size: 28px;
+
+    border: 0 transparent none;
+    border-radius: 10px;
+
+    margin: 0 23px 0 7px;
+    padding: 0px 0px 2px 2px;
+
+    background: tomato;
+}
+
+.hr {
+    width: 88%;
+    border-radius: 15px;
+    /* border: 2px; */
+    height: 1px;
+    background: black;
+}

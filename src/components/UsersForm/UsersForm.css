@@ -1,0 +1,68 @@
+.users-form__main-container {
+    position: fixed;
+    top: 0vh;
+    right: 0vw;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(2px);
+
+    background: rgba(255, 0, 0, 0.275);
+}
+
+.users-form__submain-container {
+    width: 80%;
+    height: 731px;
+    max-width: 500px;
+    box-shadow: -10px 10px 25px rgba(253, 0, 223, 0.673);
+    border-radius: 35px;
+    padding: 0 16px 16px;
+
+}
+
+.users-form__title-btn {
+    position: relative;
+}
+
+.user-form__close-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+
+    background: transparent;
+    border: 0px none transparent;
+
+    color: red;
+}
+
+.users-form__input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.users-form__input-container {
+    margin: 32px 0;
+}
+
+.users-form__input {
+    border-radius: 15px;
+    height: 48px;
+}
+
+.users-form__btn-create-user {
+    color: #fff;
+    border: 0 none;
+    width: 100%;
+    height: 45px;
+
+    padding: 6px 0;
+
+    background-color: rgba(85, 90, 136, 1);
+
+    border-radius: 15px;
+}

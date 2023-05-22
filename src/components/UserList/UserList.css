@@ -1,0 +1,14 @@
+.user-list__ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.user-list__li {
+    margin: 12px;
+    padding: 3px;
+
+    list-style: none;
+}
