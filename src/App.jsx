@@ -26,8 +26,9 @@ function App() {
 
   const handleOnSend = async (data) => {
     if (data.id) await editUserData(data.id, data);
-    else createUser(data);
-    await loadUser();
+    else await createUser(data);
+
+    loadUser();
 
     setIsUserFormVisible(!isUserFormVisible);
   };
@@ -43,10 +44,10 @@ function App() {
     await loadUser();
   };
 
-  // Una vez finalizado el proyecto, he detecado que la actualizacion automatica es intermitente, es decir. Se pasa la funcion handleOnSend a el componente UsersForm como la prop onSend, es este handleOnSend se encarga de ejecutar el load users cada vez, pero aun así se me cierra el formulario y nunca sucede la actualizacion del el nuevo usuario creado, en otras palabras no se pinta en lapantalla el nuevo usuario en la lista de usuarios, esto lo podemos comprobar quitando la variable reactiva users de el array de dependencias de este useEffect
+  // Una vez finalizado el proyecto, he detecado que la actualizacion automatica es intermitente, es decir. Se pasa la funcion handleOnSend a el componente UsersForm como la prop onSend, es este handleOnSend se encarga de ejecutar el load users cada vez, pero aun así se me cierra el formulario y nunca sucede la actualizacion del el nuevo usuario creado, en otras palabras no se pinta en lapantalla el nuevo usuario en la lista de usuarios, esto lo podemos comprobar quitando la variable reactiva users de el array de dependencias de este useEffect. pero eraporque le faltaba el await a la linea #29 else await createUser(data);
   useEffect(() => {
     loadUser();
-  }, [users]);
+  }, []);
   // }, []);
 
   return (

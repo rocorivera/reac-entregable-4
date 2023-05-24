@@ -30,8 +30,9 @@
 }
 
 .user-card__ul {
-    /* position: relative; */
-    color: rgb(48, 48, 48);
+    margin-left: 29px;
+    color: #303030;
+    /* display: grid; */
 }
 
 .user-card__li {
@@ -79,9 +80,9 @@
 }
 
 .hr {
+    margin-left: 21px;
     width: 88%;
     border-radius: 15px;
-    /* border: 2px; */
     height: 1px;
     background: black;
 }

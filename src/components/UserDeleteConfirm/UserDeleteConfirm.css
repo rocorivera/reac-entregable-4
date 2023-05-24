@@ -1,0 +1,56 @@
+/* .UserDeleteConfirm-container {
+    border: 1px red solid;
+
+} */
+
+.UserDeleteConfirm-container {
+    position: fixed;
+    top: 0vh;
+    right: 0vw;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(2px);
+    background: rgba(255, 0, 0, .275);
+
+
+}
+
+.confirmation-container {
+    border-radius: 15px;
+    box-shadow: -10px 10px 25px rgba(253, 0, 223, 0.673);
+
+    padding: 6px 38px 36px 38px;
+}
+
+.title {
+    color: red;
+    text-shadow: -10px 10px 25px black;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-list__btn {
+
+    padding: 6px;
+
+    color: black;
+    background-color: darkgray;
+
+    border: 0 none transparent;
+    border-radius: 15px;
+
+    box-shadow: -10px 10px 25px black;
+}
